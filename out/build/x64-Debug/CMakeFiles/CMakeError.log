@@ -1,0 +1,92 @@
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wknrcj
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_04fa9 && [1/2] Building CXX object CMakeFiles\cmTC_04fa9.dir\CMakeCXXCompilerABI.cpp.obj
+FAILED: CMakeFiles/cmTC_04fa9.dir/CMakeCXXCompilerABI.cpp.obj 
+C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1435~1.322\bin\Hostx64\x64\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_04fa9.dir\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\cmTC_04fa9.dir\ /FS -c "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp"
+C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp : fatal error C1083: Cannot open compiler generated file: '': Invalid argument
+ninja: build stopped: subcommand failed.
+
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vvwx2t
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_cd5e7 && [1/2] Building C object CMakeFiles\cmTC_cd5e7.dir\src.c.obj
+FAILED: CMakeFiles/cmTC_cd5e7.dir/src.c.obj 
+C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1435~1.322\bin\Hostx64\x64\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_cd5e7.dir\src.c.obj /FdCMakeFiles\cmTC_cd5e7.dir\ /FS -c "C:\Users\jdvil\Documents\University\Fourth Year\CPSC 453 - Intro to Computer Graphics\Assignments\Assignment 4 Reloaded\453-skeleton-Assignment-4\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-vvwx2t\src.c"
+C:\Users\jdvil\Documents\University\Fourth Year\CPSC 453 - Intro to Computer Graphics\Assignments\Assignment 4 Reloaded\453-skeleton-Assignment-4\out\build\x64-Debug\CMakeFiles\CMakeScratch\TryCompile-vvwx2t\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-n46if6
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_14be7 && [1/2] Building C object CMakeFiles\cmTC_14be7.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_14be7.exe
+FAILED: cmTC_14be7.exe 
+cmd.exe /C "cd . && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_14be7.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1435~1.322\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_14be7.dir\CheckFunctionExists.c.obj  /out:cmTC_14be7.exe /implib:cmTC_14be7.lib /pdb:cmTC_14be7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1435~1.322\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_14be7.dir\CheckFunctionExists.c.obj /out:cmTC_14be7.exe /implib:cmTC_14be7.lib /pdb:cmTC_14be7.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_14be7.dir/intermediate.manifest CMakeFiles\cmTC_14be7.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib'
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-oe04ro
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_95c82 && [1/2] Building C object CMakeFiles\cmTC_95c82.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_95c82.exe
+FAILED: cmTC_95c82.exe 
+cmd.exe /C "cd . && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_95c82.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1435~1.322\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_95c82.dir\CheckFunctionExists.c.obj  /out:cmTC_95c82.exe /implib:cmTC_95c82.lib /pdb:cmTC_95c82.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1435~1.322\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_95c82.dir\CheckFunctionExists.c.obj /out:cmTC_95c82.exe /implib:cmTC_95c82.lib /pdb:cmTC_95c82.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_95c82.dir/intermediate.manifest CMakeFiles\cmTC_95c82.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: cannot open file 'pthread.lib'
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C++ SOURCE FILE Test has_std_17_flag failed with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nqtx1q
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_0db7d && [1/2] Building CXX object CMakeFiles\cmTC_0db7d.dir\src.cxx.obj
+cl : Command line warning D9002 : ignoring unknown option '-std=c++17'
+[2/2] Linking CXX executable cmTC_0db7d.exe
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test has_std_1z_flag failed with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0374f0
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_c8058 && [1/2] Building CXX object CMakeFiles\cmTC_c8058.dir\src.cxx.obj
+cl : Command line warning D9002 : ignoring unknown option '-std=c++1z'
+[2/2] Linking CXX executable cmTC_c8058.exe
+
+
+Source file was:
+int main() { return 0; }
+

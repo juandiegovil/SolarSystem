@@ -1,0 +1,112 @@
+The system is: Windows - 10.0.22000 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.35.32216.1 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/3.25.1-msvc1/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.35.32216.1 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.35.32216.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/3.25.1-msvc1/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-yyhyue
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_c754c && [1/2] Building C object CMakeFiles\cmTC_c754c.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_c754c.exe
+
+
+
+Determining if the C++ compiler works passed with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-pr7yle
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_d7f8c && [1/2] Building CXX object CMakeFiles\cmTC_d7f8c.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_d7f8c.exe
+
+
+
+Performing C++ SOURCE FILE Test SUPPORTS_USER_DEFINED_LITERALS succeeded with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-r8oiyf
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_4862f && [1/2] Building CXX object CMakeFiles\cmTC_4862f.dir\src.cxx.obj
+[2/2] Linking CXX executable cmTC_4862f.exe
+
+
+Source file was:
+
+  void operator"" _udl(long double);
+  int main() {}
+
+Performing C++ SOURCE FILE Test FMT_HAS_VARIANT succeeded with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-15dzsk
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_110e7 && [1/2] Building CXX object CMakeFiles\cmTC_110e7.dir\src.cxx.obj
+cl : Command line warning D9002 : ignoring unknown option '-std=c++1z'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\variant(13): warning STL4038: The contents of <variant> are available only with C++17 or later.
+[2/2] Linking CXX executable cmTC_110e7.exe
+
+
+Source file was:
+
+  #include <variant>
+  int main() {}
+
+Determining if the _strtod_l exist passed with the following output:
+Change Dir: C:/Users/jdvil/Documents/University/Fourth Year/CPSC 453 - Intro to Computer Graphics/Assignments/Assignment 4 Reloaded/453-skeleton-Assignment-4/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-o3milu
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_45493 && [1/2] Building C object CMakeFiles\cmTC_45493.dir\CheckSymbolExists.c.obj
+[2/2] Linking C executable cmTC_45493.exe
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtod_l
+  return ((int*)(&_strtod_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
