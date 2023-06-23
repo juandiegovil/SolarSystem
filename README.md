@@ -1,4 +1,4 @@
-# SolarSystem2
+# Solar System
 Live solar system animation created with OpenGL
 
 Virtual Orery and Real Time Rendering
