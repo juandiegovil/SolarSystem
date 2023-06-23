@@ -1,5 +1,6 @@
 # SolarSystem2
 Live solar system animation created with OpenGL
+
 Virtual Orery and Real Time Rendering
 
 ![Solar System Preview](https://github.com/juandiegovil/SolarSystem2/assets/66028457/5c30b213-c374-42e3-8774-3987fad06fa1)
